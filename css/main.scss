@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
+
+$font-size-small: 18px;
+$font-size-mid: 32px;
+$font-size-large: 54px;
+
+@mixin box-size {
+    width:290px;
+    height: 340px;   
+}
+
+*{
+    font-family: Quicksand, 'Archivo Black', Arial;
+}
+
+body{
+    margin: 0;
+    padding: 0; 
+}
+
+h1{
+    width: 99%;
+    text-align: center;
+    margin-top: 15vh;
+    font-size: $font-size-large;
+}
+
+.container{
+    display: flex;
+    width: 1000px;
+    flex-direction: row;
+    justify-content:space-between;
+
+}
+
+.box{
+    @include box-size;
+}
+
+#box2{
+    margin-left: 40px;
+}
+
+#box3{
+    margin-left: 40px;
+}
+
+ul{
+margin-top:40px;
+margin-left: 10px;
+
+    li{
+        font-size: 17px;
+        color:grey;
+        margin-top: 10px;
+        list-style-image: url(../img/+.png);
+    }    
+}
+
+
+.wrong{
+    list-style-image: url(../img/-.png);
+}
+
+
+.box{
+    @include box-size;
+    display: block;
+    box-shadow: 0 0 35px rgba(0,0,0,0.2);
+    
+
+    h2{
+        text-align: center;
+        text-transform: uppercase;
+    }
+    p{
+        font-family:Quicksand;
+        font-size: 28px;
+        text-align: center;
+        color:grey;
+        font-weight: bold;
+        big{
+            font-size: 60px;
+            font-family: Arial;
+        }
+        b{
+            color: #16253d;
+            font-family:Quicksand;
+        } 
+    }
+    &:hover{
+        background: whitesmoke;
+    }
+}
+
+.footer{
+    margin: 0 auto;
+    width: 50vw;
+    max-width: 1000px;
+    margin-top:70px;
+    p{
+        text-align: center;
+    }
+    
+}
+
+a{
+background: rgb(58, 167, 218);
+border-radius: 100px;
+padding: 8px 40px 8px 40px;
+color:white;
+font-weight: bold;
+text-decoration: none;
+
+&:hover{
+    background: black;
+    transition: 1s;}
+}
+
+.button{
+    position: relative;
+    display: flex;
+    margin-top:50px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.arrow{
+    background: grey;
+    opacity: 0.2;
+    min-width: 300px;
+    max-width: 500px;
+    height: 1px;
+    align-self: center;
+    margin: 0 25px 0 25px;
+}
+
+
+.widebox{
+    width: 1000px;
+    margin: 0 auto;
+}

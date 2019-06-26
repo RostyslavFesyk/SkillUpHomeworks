@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>SASS</title>
+</head>
+
+
+<!-- 
+    Проблематика завдання:
+1.Проблеми з адаптивністю(коли земеншуєш масштаб до 25% видно,що пливе текст з флексів)
+2.Як правильно центрувати елементи,адже не завжди працює <margin: 0 auto>,і чи цей спосіб правильний?
+3.На що замінити тег <big> (знаходиться в елементі де показується ціна) ; в валідаторі пише,що цей
+    теш потрібно замінити в CSS.
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+    <h1>Check our pricing!</h1>
+<div class="widebox">
+    <div class="container">
+
+        <div class="box">
+            <h2>Bronze Plan</h2>
+            <p><b>$<big>19</big></b>/mon</p>
+
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li class="wrong">Lorem ipsum dolor sit amet.</li>
+                <li class="wrong">Lorem ipsum dolor sit amet.</li>
+            </ul>
+
+        </div>
+
+
+        <div class="box" id="box2">
+            <h2>Silver Plan</h2>
+            <p><b>$<big>39</big></b>/mon</p>
+
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li class="wrong">Lorem ipsum dolor sit amet.</li>
+            </ul>
+        </div>
+
+
+
+
+        <div class="box" id="box3">
+            <h2>Gold Plan</h2>
+            <p><b>$<big>49</big></b>/mon</p>
+
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+        </div>
+
+
+    </div>
+</div>
+
+
+    <div class="footer">
+    <p>Lorem, ipsum dolor sit amet cons
+        ectetur adipisicing elit. Aspernatur quaerat hic in, ea mo
+        lestias, veritatis ad vero facilis dolorem, aliquam ipsa natus v
+        elit! Possimus, rerum libero. Officiis, impedit aliquid!</p>
+    </div>
+
+    <div class="button">
+
+   <div class="arrow"></div>
+   <div><p><a href="#">Join now!</a></p></div>
+   <div class="arrow"></div>
+
+    </div>
+
+</body>
+
+</html>
